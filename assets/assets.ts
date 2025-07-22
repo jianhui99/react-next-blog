@@ -26,6 +26,8 @@ import add_icon from "./add_icon.png";
 import email_icon from "./email_icon.png";
 import upload_area from "./upload_area.png";
 import { StaticImageData } from "next/image";
+import { getRandomNumber } from "@/utils/number";
+import { generateRandomAuthorName } from "@/utils/string";
 
 export const assets: Record<string, string | StaticImageData> = {
   facebook_icon,
@@ -51,6 +53,7 @@ export interface BlogData {
   author: string;
   author_img: string | StaticImageData;
   slug?: string;
+  read_time: number;
 }
 
 export const blog_data: BlogData[] = [
@@ -61,8 +64,9 @@ export const blog_data: BlogData[] = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
     image: blog_pic_1,
     date: Date.now(),
+    read_time: getRandomNumber(1, 45),
     category: "Lifestyle",
-    author: "Alex Bennett",
+    author: 'Amelia Jones',
     author_img: profile_icon,
   },
   {
@@ -72,8 +76,9 @@ export const blog_data: BlogData[] = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
     image: blog_pic_2,
     date: Date.now(),
+    read_time: getRandomNumber(1, 45),
     category: "Startup",
-    author: "Alex Bennett",
+    author: 'Amelia Jones',
     author_img: profile_icon,
   },
   {
@@ -83,8 +88,9 @@ export const blog_data: BlogData[] = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
     image: blog_pic_3,
     date: Date.now(),
+    read_time: getRandomNumber(1, 45),
     category: "Technology",
-    author: "Alex Bennett",
+    author: 'Amelia Jones',
     author_img: profile_icon,
   },
   {
@@ -94,8 +100,9 @@ export const blog_data: BlogData[] = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
     image: blog_pic_4,
     date: Date.now(),
+    read_time: getRandomNumber(1, 45),
     category: "Technology",
-    author: "Alex Bennett",
+    author: 'Amelia Jones',
     author_img: profile_icon,
   },
   {
@@ -105,8 +112,9 @@ export const blog_data: BlogData[] = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
     image: blog_pic_5,
     date: Date.now(),
+    read_time: getRandomNumber(1, 45),
     category: "Lifestyle",
-    author: "Alex Bennett",
+    author: 'Amelia Jones',
     author_img: profile_icon,
   },
   {
@@ -116,8 +124,9 @@ export const blog_data: BlogData[] = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
     image: blog_pic_6,
     date: Date.now(),
+    read_time: getRandomNumber(1, 45),
     category: "Startup",
-    author: "Alex Bennett",
+    author: 'Amelia Jones',
     author_img: profile_icon,
   },
   {
@@ -127,8 +136,9 @@ export const blog_data: BlogData[] = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
     image: blog_pic_7,
     date: Date.now(),
+    read_time: getRandomNumber(1, 45),
     category: "Technology",
-    author: "Alex Bennett",
+    author: 'William Jones',
     author_img: profile_icon,
   },
   {
@@ -138,8 +148,9 @@ export const blog_data: BlogData[] = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
     image: blog_pic_8,
     date: Date.now(),
+    read_time: getRandomNumber(1, 45),
     category: "Lifestyle",
-    author: "Alex Bennett",
+    author: 'William Jones',
     author_img: profile_icon,
   },
   {
@@ -149,8 +160,9 @@ export const blog_data: BlogData[] = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
     image: blog_pic_9,
     date: Date.now(),
+    read_time: getRandomNumber(1, 45),
     category: "Startup",
-    author: "Alex Bennett",
+    author: 'William Jones',
     author_img: profile_icon,
   },
   {
@@ -160,8 +172,9 @@ export const blog_data: BlogData[] = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
     image: blog_pic_10,
     date: Date.now(),
+    read_time: getRandomNumber(1, 45),
     category: "Lifestyle",
-    author: "Alex Bennett",
+    author: 'Olivia Davis',
     author_img: profile_icon,
   },
   {
@@ -171,8 +184,9 @@ export const blog_data: BlogData[] = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
     image: blog_pic_11,
     date: Date.now(),
+    read_time: getRandomNumber(1, 45),
     category: "Startup",
-    author: "Alex Bennett",
+    author: 'Olivia Davis',
     author_img: profile_icon,
   },
   {
@@ -182,8 +196,9 @@ export const blog_data: BlogData[] = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
     image: blog_pic_12,
     date: Date.now(),
+    read_time: getRandomNumber(1, 45),
     category: "Technology",
-    author: "Alex Bennett",
+    author: 'Olivia Davis',
     author_img: profile_icon,
   },
   {
@@ -193,8 +208,9 @@ export const blog_data: BlogData[] = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
     image: blog_pic_13,
     date: Date.now(),
+    read_time: getRandomNumber(1, 45),
     category: "Startup",
-    author: "Alex Bennett",
+    author: 'Amelia Rodriguez',
     author_img: profile_icon,
   },
   {
@@ -204,8 +220,9 @@ export const blog_data: BlogData[] = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
     image: blog_pic_14,
     date: Date.now(),
+    read_time: getRandomNumber(1, 45),
     category: "Lifestyle",
-    author: "Alex Bennett",
+    author: 'Amelia Rodriguez',
     author_img: profile_icon,
   },
   {
@@ -215,8 +232,9 @@ export const blog_data: BlogData[] = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
     image: blog_pic_15,
     date: Date.now(),
+    read_time: getRandomNumber(1, 45),
     category: "Technology",
-    author: "Alex Bennett",
+    author: 'Amelia Rodriguez',
     author_img: profile_icon,
   },
   {
@@ -226,8 +244,9 @@ export const blog_data: BlogData[] = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
     image: blog_pic_16,
     date: Date.now(),
+    read_time: getRandomNumber(1, 45),
     category: "Startup",
-    author: "Alex Bennett",
+    author: 'Amelia Rodriguez',
     author_img: profile_icon,
   },
 ];
